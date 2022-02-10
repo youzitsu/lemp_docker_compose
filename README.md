@@ -14,3 +14,6 @@
 
 + docker-compose up -d
 
+
+--access browser : ipaddress:8282
+
