@@ -20,8 +20,6 @@ services:
     mysql:
         image: mysql:version2
         container_name: LEMP_mysql
-        volumes:
-            - ./database:/var/lib/mysql:rw
         ports:
             - "4444:3306"
         depends_on:
@@ -31,7 +29,7 @@ services:
         networks:
             - LEMP
     php:
-        image: php:version1
+        image: php:version2
         container_name: LEMP_php
         volumes:
             - ./codephp:/usr/share/nginx/html
